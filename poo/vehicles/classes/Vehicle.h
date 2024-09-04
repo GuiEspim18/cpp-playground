@@ -3,7 +3,9 @@
 
 #include <iostream>
 
-class Vehicle {
+export module Vehicle;
+
+export class Vehicle {
     public:
         std::string brand;
         std::string model;
@@ -11,13 +13,7 @@ class Vehicle {
         std::string color;
         std::string fuel;
 
-        Vehicle(std::string brand, std::string model, std::string plate, std::string color, std::string fuel) {
-            this -> brand = brand;
-            this -> model = model;
-            this -> plate = plate;
-            this -> color = color;
-            this -> fuel = fuel;
-        }
+        Vehicle(std::string brand, std::string model, std::string plate, std::string color, std::string fuel)
 };
 
 #endif
